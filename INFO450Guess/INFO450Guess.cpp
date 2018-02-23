@@ -16,12 +16,13 @@ const int GOLD = 5;
 void initializeArray(char board[ROWS][COLS]);
 void items(char board[ROWS][COLS]);
 void printArray(char mArray[ROWS][COLS]);
-void guessWhere(char board[ROWS][COLS]);
+void finalBoard(char board[ROWS][COLS]);
 
-char answer;
+
 
 int main()
 {
+	char answer;
 	do
 	{
 		char board[ROWS][COLS];
@@ -29,7 +30,7 @@ int main()
 		initializeArray(board);
 		printArray(board);
 		items(board);
-		guessWhere(board);
+		finalBoard(board);
 
 
 		cout << endl;
@@ -121,8 +122,8 @@ void printArray(char mArray[ROWS][COLS])
 
 	cout << endl;
 }
-//This function has the user input coordinates and in displays the results in the end.
-void guessWhere(char board[ROWS][COLS])
+//This function has the user input coordinates.
+void finalBoard(char board[ROWS][COLS])
 {
 	int r, c;
 	int attempts = GUESSES;
@@ -168,7 +169,7 @@ void guessWhere(char board[ROWS][COLS])
 
 	cout << "You earned " << points << " points!!" << endl;
 	cout << "Better Luck Next Time!!" << endl;
-	//This shows the users board in the end with the locations of the gold and bomb.
+	//This shows the users board with the locations of the gold and bomb.
 	cout << "Here's your board: " << endl;
 	cout << endl;
 
