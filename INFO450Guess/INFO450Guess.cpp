@@ -168,6 +168,7 @@ void guessWhere(char board[ROWS][COLS])
 
 	cout << "You earned " << points << " points!!" << endl;
 	cout << "Better Luck Next Time!!" << endl;
+	//This shows the users board in the end with the locations of the gold and bomb.
 	cout << "Here's your board: " << endl;
 	cout << endl;
 
